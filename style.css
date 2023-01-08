@@ -3,6 +3,7 @@
     margin:0;
     box-sizing: border-box;
 }
+
 :root{
     --cell-size:100px;
     --mark-size:calc(var( --cell-size) * .9);
@@ -21,7 +22,7 @@
 .cell{
     width:var( --cell-size);
     height:var( --cell-size);
-    border:solid 1px black;
+    border:solid 1px dodgerblue;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +58,7 @@
    content:'';
    width:calc(var(--mark-size) * .15);
    height:var(--mark-size);
-   background-color:black;
+   background-color:darkslategray;
    position:absolute;
 }
 .board.x .cell:not(.x):not(.circle):hover:before,
@@ -92,7 +93,7 @@
 .cell.circle:after{
    content:'';
    border-radius:50%;
-   background-color:black;
+   background-color:darkblue;
    position:absolute;
 }
 
